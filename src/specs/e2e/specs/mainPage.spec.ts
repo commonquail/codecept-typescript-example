@@ -1,7 +1,5 @@
 "use strict";
 
-import { aboutPage } from "codeceptjs";
-
 Feature("Main page functionality");
 
 Scenario("should see header with links", (I) => {
@@ -14,7 +12,7 @@ Scenario("should see header with links", (I) => {
   });
 });
 
-Scenario("should navigate by header navigation", (I, about: aboutPage) => {
+Scenario("should navigate by header navigation", (I, about: about) => {
   I.amOnPage("/");
   I.see("Hello");
 
