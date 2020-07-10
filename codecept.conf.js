@@ -2,9 +2,10 @@ exports.config = {
   tests: "./src/specs/e2e/specs/*.spec.ts",
   output: "./output",
   helpers: {
-    WebDriver: {
+    Puppeteer: {
       url: "http://localhost:5000",
-      browser: "chrome"
+      show: true,
+      windowSize: '1200x900'
     },
     RandomGeneratorHelper: {
       require: "./src/specs/e2e/helpers/randomGenerator.helper.ts"
