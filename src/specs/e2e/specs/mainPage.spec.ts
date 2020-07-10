@@ -17,8 +17,8 @@ Scenario("should navigate by header navigation", (I, about: about) => {
   I.see("Hello");
 
   I.click("//header[@class='header']//a[@href='/about']");
-  I.seeElement(about.aboutSection);
-  I.see(about.pageHeaderText, locate(about.pageHeader));
+  I.seeElement(about.default.aboutSection);
+  I.see(about.default.pageHeaderText, locate(about.default.pageHeader));
 
   I.click("//header[@class='header']//a[@href='/']");
   I.see("Hello");
