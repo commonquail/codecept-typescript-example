@@ -1,5 +1,7 @@
 "use strict";
 
+import { AboutPage } from "pages/about.page";
+
 Feature("Main page functionality");
 
 Scenario("should see header with links", (I) => {
@@ -12,7 +14,7 @@ Scenario("should see header with links", (I) => {
   });
 });
 
-Scenario("should navigate by header navigation", (I, about: about) => {
+Scenario("should navigate by header navigation", (I, about: AboutPage) => {
   I.amOnPage("/");
   I.see("Hello");
 
