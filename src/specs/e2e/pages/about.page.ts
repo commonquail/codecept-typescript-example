@@ -2,7 +2,7 @@
 
 const { I } = inject();
 
-export default {
+module.exports = {
   aboutSection: "main #about-info",
   pageHeader: "//main/h1",
   pageHeaderText: "About",
