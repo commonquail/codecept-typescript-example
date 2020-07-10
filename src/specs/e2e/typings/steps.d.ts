@@ -1,5 +1,5 @@
 /// <reference types='codeceptjs' />
-type about = typeof import('./src/specs/e2e/pages/about.page');
+type about = typeof import('pages/about.page');
 
 declare namespace CodeceptJS {
   interface SupportObject { I: CodeceptJS.I, about: about }
