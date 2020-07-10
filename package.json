@@ -2,8 +2,8 @@
   "name": "codecept-typescript-example",
   "version": "0.1.1",
   "description": "Example project of codeceptjs with typescript.",
-  "repository": "https://github.com/LukoyanovE/codecept-typescript-example.git",
-  "author": "Evgeny Lukoyanov <lukoyanov94@mail.ru>",
+  "repository": "https://github.com/commonquail/codecept-typescript-example",
+  "author": "Mikkel Kjeldsen <commonquail@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "pm2 start serve",
