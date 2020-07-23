@@ -1,13 +1,9 @@
 const { I } = inject();
 
-const about = {
+export = {
   aboutSection: "main #about-info",
   pageHeader: "//main/h1",
   pageHeaderText: "About",
   title: "About - Simple app",
   url: "/",
 };
-
-export type AboutPage = typeof about;
-
-module.exports = about;

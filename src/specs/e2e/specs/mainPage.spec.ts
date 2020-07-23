@@ -1,5 +1,3 @@
-import { AboutPage } from "pages/about.page";
-
 Feature("Main page functionality");
 
 Scenario("should see header with links", (I) => {
@@ -13,7 +11,7 @@ Scenario("should see header with links", (I) => {
   });
 });
 
-Scenario("should navigate by header navigation", (I, about: AboutPage) => {
+Scenario("should navigate by header navigation", (I, about: about) => {
   I.amOnPage("/");
   I.see("Hello");
 
