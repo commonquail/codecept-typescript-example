@@ -7,6 +7,7 @@ Feature("Main page functionality");
 Scenario("should see header with links", (I) => {
   I.amOnPage("/");
   I.seeElement({ css: "header.header nav" });
+  I.generateRandomString(2);
   I.generateRandomString(2, "abcd");
   within("header.header nav > ul", () => {
     I.see("Main page");

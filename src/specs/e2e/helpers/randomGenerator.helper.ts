@@ -1,7 +1,7 @@
 "use strict";
 
 class RandomGeneratorHelper extends Helper {
-  public async generateRandomString(len, alphabet) {
+  public async generateRandomString(len: number, alphabet?: string) {
     alphabet = alphabet || "0123456789";
     let randomString = "";
     for (let i = 0; i < len; i++) {
