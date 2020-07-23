@@ -11,7 +11,7 @@ Scenario("should see header with links", (I) => {
   });
 });
 
-Scenario("should navigate by header navigation", (I, about: about) => {
+Scenario("should navigate by header navigation", (I, about) => {
   I.amOnPage("/");
   I.see("Hello");
 
