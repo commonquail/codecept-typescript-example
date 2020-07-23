@@ -12,7 +12,8 @@ exports.config = {
     }
   },
   include: {
-    about: "./src/specs/e2e/pages/about.page.ts"
+    about: "./src/specs/e2e/pages/about.page.ts",
+    home: "./src/specs/e2e/pages/home.page.ts"
   },
   bootstrap: null,
   mocha: {},
