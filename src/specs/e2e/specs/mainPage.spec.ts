@@ -1,5 +1,3 @@
-"use strict";
-
 import { AboutPage } from "pages/about.page";
 
 Feature("Main page functionality");

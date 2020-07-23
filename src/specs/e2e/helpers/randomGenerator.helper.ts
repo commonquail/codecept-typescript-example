@@ -1,5 +1,3 @@
-"use strict";
-
 class RandomGeneratorHelper extends Helper {
   public async generateRandomString(len: number, alphabet?: string) {
     alphabet = alphabet || "0123456789";
