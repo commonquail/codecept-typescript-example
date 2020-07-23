@@ -5,5 +5,5 @@ export = {
   pageHeader: "//main/h1",
   pageHeaderText: "About",
   title: "About - Simple app",
-  url: "/",
+  url: "/about",
 };
