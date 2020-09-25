@@ -9,6 +9,9 @@ exports.config = {
     },
     RandomGeneratorHelper: {
       require: "./src/specs/e2e/helpers/randomGenerator.helper.ts"
+    },
+    REST: {
+      endpoint: "https://reqres.in/"
     }
   },
   include: {
