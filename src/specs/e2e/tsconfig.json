@@ -10,6 +10,7 @@
     "baseUrl": ".",
     "types": [
       "node",
+      "./typings/index",
       "./typings/steps"
     ]
   }

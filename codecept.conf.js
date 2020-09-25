@@ -13,11 +13,15 @@ exports.config = {
     },
     RandomGeneratorHelper: {
       require: "./src/specs/e2e/helpers/randomGenerator.helper.ts"
+    },
+    REST: {
+      endpoint: "https://reqres.in"
     }
   },
   include: {
     about: "./src/specs/e2e/pages/about.page.ts",
-    home: "./src/specs/e2e/pages/home.page.ts"
+    home: "./src/specs/e2e/pages/home.page.ts",
+    reqresApi: "./src/specs/e2e/pages/reqresApi.api.ts"
   },
   bootstrap: null,
   mocha: {},
