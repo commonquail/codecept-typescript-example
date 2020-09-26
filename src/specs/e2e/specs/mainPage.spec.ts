@@ -1,4 +1,4 @@
-Feature("Main page functionality");
+Feature("Main page functionality").tag("@puppeteer");
 
 Scenario("should see header with links", (I) => {
   I.amOnPage("/");

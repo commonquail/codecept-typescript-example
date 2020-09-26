@@ -1,4 +1,4 @@
-Feature("Callback parameter list");
+Feature("Callback parameter list").tag("@puppeteer");
 
 // In summary:
 //
