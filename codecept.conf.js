@@ -1,3 +1,7 @@
+const { setHeadlessWhen } = require('@codeceptjs/configure');
+
+setHeadlessWhen(process.env.HEADLESS);
+
 exports.config = {
   tests: "./src/specs/e2e/specs/*.spec.ts",
   output: "./output",
