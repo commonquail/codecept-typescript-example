@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@types/node": "14.0.22",
-    "codeceptjs": "2.6.6",
+    "codeceptjs": "2.6.11",
     "pm2": "^3.5.1",
     "puppeteer": "5.0.0",
     "serve": "^11.0.2",
