@@ -1,5 +1,6 @@
 import * as assert from "assert";
 import * as axios from "axios";
+import * as chai from "chai";
 import * as reqres from "reqres/user";
 
 Feature("REST helper demonstration").tag("@rest");
@@ -7,6 +8,7 @@ Feature("REST helper demonstration").tag("@rest");
 Scenario("type-resolve with explicit type parameter", async (I) => {
     const response  = await I.sendGetRequest<reqres.ListUsers>("/api/users");
     assert.strictEqual(response.status, 200);
+    chai.expect(response.status).to.eq(200);
 });
 
 Scenario("type-resolve with explicit variable type, inferred type parameter", async (I) => {
@@ -61,4 +63,7 @@ Scenario("can use api page object abstraction", async (I, reqresApi: reqresApi) 
 
     assert.strictEqual(updateUser.status, 200);
     assert.strictEqual(updateUser.data.name, userInput.name);
+
+    chai.expect(listUsers.data.data).to.be.not.empty;
+    chai.expect(getUser.data.data).to.have.keys(["id", "email", "avatar", "first_name", "last_name"]);
 });

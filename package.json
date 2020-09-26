@@ -14,7 +14,9 @@
     "test:e2e:def": "TS_NODE_PROJECT='./src/specs/e2e/tsconfig.json' codeceptjs def && sed '/\\.helper/d ; s|\\./.*\\(pages\\)|\\1|' steps.d.ts > ./src/specs/e2e/typings/steps.d.ts && rm steps.d.ts"
   },
   "devDependencies": {
+    "@types/chai": "4.2.12",
     "@types/node": "14.0.22",
+    "chai": "4.2.0",
     "codeceptjs": "2.6.11",
     "pm2": "^3.5.1",
     "puppeteer": "5.0.0",
