@@ -11,7 +11,12 @@ To get started, run
 
 ```sh
 $ yarn install
+$ yarn start
 ```
+
+`yarn start` starts a local Web server that the Puppeteer-driven tests rely on.
+The `yarn stop` command stops server when you're finished with it. The REST
+helper uses the publicly available <https://reqres.in/> service.
 
 Afterwards you can run tests in several different ways:
 
